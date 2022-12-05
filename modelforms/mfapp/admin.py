@@ -7,4 +7,4 @@ from .models import mfforms
 class mfformsAdmin(admin.ModelAdmin):
     '''Admin View for mfforms'''
 
-    list_display = ('id', 'name', 'catagory', 'village')
+    list_display = ('id', 'name', 'Email', 'Address')

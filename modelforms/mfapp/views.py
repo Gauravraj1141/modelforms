@@ -12,9 +12,9 @@ def mfhome(request):
         if data.is_valid():
             print("validate")
             nm = data.cleaned_data["name"]
-            ct = data.cleaned_data["catagory"]
-            vl = data.cleaned_data["village"]
-            mydata = mfforms(name=nm, catagory=ct, village=vl)
+            ct = data.cleaned_data["Email"]
+            vl = data.cleaned_data["Address"]
+            mydata = mfforms(name=nm, Email=ct, Address=vl)
             mydata.save()
     else:
         data = showforms()

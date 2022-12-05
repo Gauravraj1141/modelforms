@@ -4,6 +4,6 @@ from django.db import models
 
 
 class mfforms(models.Model):
-    name = models.CharField(max_length=23)
-    catagory = models.CharField(max_length=500)
-    village = models.CharField(max_length=50)
+    name = models.CharField(max_length=40)
+    Email = models.EmailField(max_length=30, default="ram@gmail.com")
+    Address = models.TextField(max_length=300, default="fsadfasdfasdfasfasf")
